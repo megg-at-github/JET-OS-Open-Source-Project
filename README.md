@@ -4,4 +4,9 @@ Disclaimer: This software is made with good intentions for specific persons . An
 Pix OS is a very basic Operating System, which the current version only do 2 thing, show time and battery status. And its for people who like basic things and hate a lot of options. its an open source project so others can contribute in this project.
 # How to use this OS
 This OS is only having type interface, not a Graphical User Interface. But its is very easy to use. You can run this OS on Command Prompt By just clicking the file.
+To run it first you want to download and analyze the code and fill the right placeholders. then you can close and again click the file and run it. And you don't want to be worried that your primary OS will be deleted. That this will work in the Command Prompt. only and will not affect your real computer.
+# Requirements
+1. Install Python to your device
+2. Minimum storage: 2 KB
+   
 
