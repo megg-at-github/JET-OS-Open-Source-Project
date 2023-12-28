@@ -54,7 +54,43 @@ print("Battery charge:", percent, "%")
 
 if input == "battery status":
     print("Battery charge:", percent, "%")
-else: quit() 
+else: quit()
+
+import psutil
+
+# Get the CPU usage percentage
+cpu_percent = psutil.cpu_percent(interval=1)  # Sample over a 1-second interval
+
+# Print the CPU usage
+print("CPU usage:", cpu_percent, "%")
+
+import requests
+
+def download_file(url, filename):
+    """Downloads a file from a given URL and saves it with the specified filename."""
+
+    with requests.get(url, stream=True) as response:
+        response.raise_for_status()  # Raise an exception for error status codes
+
+        total_size = int(response.headers.get('content-length', 0))
+        downloaded_size = 0
+
+        with open(filename, 'wb') as f:
+            for chunk in response.iter_content(chunk_size=1024):
+                if chunk:  # Filter out keep-alive new chunks
+                    downloaded_size += len(chunk)
+                    f.write(chunk)
+
+                    # Progress bar
+                    done = int(50 * downloaded_size / total_size)
+                    print(f'\r[{"#" * done}{"." * (50 - done)}] {downloaded_size}/{total_size} bytes', end='')
+
+    print('\nDownload complete!')
+
+# Example usage:
+url = 'https://example.com/file.zip'
+filename = 'downloaded_file.zip'
+download_file(url, filename)
 
 
 
