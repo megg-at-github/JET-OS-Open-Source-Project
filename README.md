@@ -9,9 +9,13 @@ To run it first you want to download and analyze the code and fill the right pla
 1. Install Python to your device
 2. Minimum storage: 3 KB
 3. Install packges such as,
+
    Password package
+
    Psutil
-   Bcrypt
+
+    Bcrypt
+
    Datetime(You can install these on command prompt, and for the commands to install, you can google it.)
    
 
