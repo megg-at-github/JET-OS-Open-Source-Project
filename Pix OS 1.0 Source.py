@@ -16,7 +16,6 @@ if not password.check(login_key, min_length, required_classes):
     print("- One lowercase letter")
     print("- One number")
     print("- One symbol")
-    quit()
 
 import bcrypt
 
@@ -92,7 +91,36 @@ url = 'https://example.com/file.zip'
 filename = 'downloaded_file.zip'
 download_file(url, filename)
 
+import psutil  # This library provides functions for interacting with system information
 
+def ram():
+    """Prints a summary of RAM usage."""
+
+    svmem = psutil.virtual_memory()  # Get virtual memory information
+
+    print(f"Total RAM: {get_size_in_bytes(svmem.total)}")
+    print(f"Available RAM: {get_size_in_bytes(svmem.available)}")
+    print(f"Used RAM: {get_size_in_bytes(svmem.used)}")
+    print(f"Percentage used: {svmem.percent}%")
+
+def get_size_in_bytes(size_in_bytes, suffix="B"):
+    """Formats a byte value with appropriate units."""
+
+    for unit in ["", "Ki", "Mi", "Gi", "Ti", "Pi", "Ei", "Zi"]:
+        if abs(size_in_bytes) < 1024.0:
+            return f"{size_in_bytes:.2f}{unit}{suffix}"
+        size_in_bytes /= 1024.0
+    return f"{size_in_bytes:.2f}Yi{suffix}"
+
+# ... your existing code ...
+
+while True:  # Assuming you have a loop for accepting user input
+    command = input("> ")
+
+    if command == "ram":
+        ram()  # Call the ram function to display RAM information
+
+    # ... other command handling ...
 
 
 
