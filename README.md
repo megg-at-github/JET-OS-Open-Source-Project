@@ -12,6 +12,6 @@ To run it first you want to download and analyze the code and fill the right pla
    Password package
    Psutil
    Bcrypt
-   Datetime(You can instll these on command prompt, and for the commands to install, you can google it.)
+   Datetime(You can install these on command prompt, and for the commands to install, you can google it.)
    
 
