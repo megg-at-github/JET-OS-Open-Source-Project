@@ -1,5 +1,6 @@
 # Pix-OS-Open-Source-Project
 This OS currently only for Windows Users
+
 Disclaimer: This software is made with good intentions for specific persons . And for running it you need to run it you want to have the source code Anyone can extract the code and modify and make their version of the software or the enhanced version of the software. The software license used here is the [MIT License](https://github.com/megg-at-github/Panopticon-Open-Source-Project/blob/main/LICENSE)
 # About this OS
 Pix OS is a very basic Operating System, which the current version only do basic things. And its for people who like basic things and hate a lot of options. its an open source project so others can contribute in this project.
