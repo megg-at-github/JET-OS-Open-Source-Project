@@ -7,7 +7,7 @@ This OS is only having type interface, not a Graphical User Interface. But its i
 To run it first you want to download and analyze the code and fill the right placeholders, like in the password placeholder, first you want to fill the password, that you want in your OS. then you can close and again click the file and run it. And you don't want to be worried that your primary OS will be deleted. That this will work in the Command Prompt. only and will not affect your real computer.
 # Requirements
 1. Install Python to your device
-2. Minimum storage: 3 KB
+2. Minimum storage: 3.56 KB
 3. Install packges such as,
 
    Password package
