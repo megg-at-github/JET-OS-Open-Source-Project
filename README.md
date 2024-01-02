@@ -18,6 +18,8 @@ To run it first you want to download and analyze the code and fill the right pla
 
     Bcrypt
 
+   Battery_status
+
    Datetime(You can install these on command prompt, and for the commands to install, you can google it.)
    
 
