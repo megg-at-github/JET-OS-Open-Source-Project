@@ -13,7 +13,7 @@ To run it first you want to download and analyze the code and fill the right pla
 # Requirements
 1. Install Python to your device
 2. Minimum storage: 3.56 KB
-3. Download the battery_status file take the code and convert it into a python file, after you have installed python.
+3. Download the battery_status and pc_info file, then take the code and convert it into a python file, after you have installed python.
 4. Install packges such as,
 
    Password package
