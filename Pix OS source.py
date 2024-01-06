@@ -25,9 +25,15 @@ from battery_status import get_battery_info
 
 from pc_info import get_pc_info
 
+import system_monitor 
+
 print(datetime.datetime.now())
 
 print(get_pc_info())
+
+print(system_monitor.get_cpu_usage())
+
+print(system_monitor.get_memory_usage())
 
 if running != 'time':
     quit()
@@ -36,6 +42,8 @@ print(datetime.datetime.now())
 # Within your program's logic, where you want to display the battery status:
 battery_info = get_battery_info()
 print(battery_info)  # Or use the information as needed in your program
+
+
 
 
 
