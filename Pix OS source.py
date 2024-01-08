@@ -25,13 +25,21 @@ from battery_status import get_battery_info
 
 from pc_info import get_pc_info
 
+from cpu_gpu import get_cpu_name
+from cpu_gpu import get_gpu_name
+
 import system_monitor
 
 from ip_address_viewer import get_ip_address
 
+from mac_address_viewer import get_mac_address
+
 print(datetime.datetime.now())
 
 print(get_pc_info())
+
+print(get_cpu_name())
+print(get_gpu_name())
 
 print(system_monitor.get_cpu_usage())
 
@@ -39,15 +47,13 @@ print(system_monitor.get_memory_usage())
 
 print(get_ip_address())
 
-if running != 'time':
-    quit()
-print(datetime.datetime.now()) 
+print(get_mac_address())
 
 # Within your program's logic, where you want to display the battery status:
 battery_info = get_battery_info()
 print(battery_info)  # Or use the information as needed in your program
 
-
+running = input("Type and Enter 'quit()'for quitting the program ")
 
 
 
