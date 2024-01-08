@@ -13,18 +13,20 @@ To run it first you want to download and analyze the code and fill the right pla
 # Requirements
 1. Install Python to your device
 2. Minimum storage: 3.56 KB
+
 3. Download the battery_status file,
-4.
-5. pc_info file,
-6.
-7. system_monitor file,
-8.
-9. ip_address_viewer file,
-10.
-11. mac_address_viewer file,
-12. cpu_gpu file then take the code and convert it into a python file, after you have installed python.
-13.
-14. Install packges such as,
+
+4. pc_info file,
+
+5. system_monitor file,
+
+6. ip_address_viewer file,
+   
+7. mac_address_viewer file,
+
+8. cpu_gpu file then take the code and convert it into a python file, after you have installed python.
+   
+9. Install packges such as,
 
    Password package
 
